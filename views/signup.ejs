@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">HustleUp</div>
+        <ul class="nav-links">
+          <li><a href="/login">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#workshop">Workshop</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+        <button class="schedule-call-btn">Schedule Call</button>
+      </div>
+    </nav>
+  </header>
+  
+  <main class="registration-container">
+    <div class="left-column">
+      <h2 class="registration-heading">Create an Account</h2>
+      <form class="registration-form" action="/signup" method="post" id="registration-form">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="name" placeholder="Enter Your Name" required autocomplete="off">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <button type="submit" class="registration-submit-btn">Register</button>
+      </form>
+    </div>
+    <div class="right-column">
+      <h1 class="hustleup-text">HustleUp</h1>
+    </div>
+  </main>
+
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-message">
+        <h6>&copy; 2024 HustleUp. All rights reserved.</h6>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

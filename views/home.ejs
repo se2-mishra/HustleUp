@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index_styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>HustleUp - Reclaim Your Passion</title>
+  <meta name="description" content="Transform your life with HustleUp, offering coaching services to help you reclaim your passion and possibility.">
+  <meta name="keywords" content="HustleUp, coaching, passion, transformation, lifestyle, habits, happiness, self-improvement">
+  <meta name="author" content="Your Name or Company Name">
+  <meta name="robots" content="index, follow"> 
+  <meta name="googlebot" content="index, follow"> 
+  <meta name="google" content="notranslate"> 
+  <meta name="format-detection" content="telephone=no"> 
+<meta property="og:title" content="HustleUp - Reclaim Your Passion">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HustleUp - Reclaim Your Passion">
+<meta name="twitter:description" content="Transform your life with HustleUp, offering coaching services to help you reclaim your passion and possibility.">
+<meta name="twitter:image" content="https://example.com/path/to/image.jpg">
+  
+</head>
+<body>
+  <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+        <div class="container">
+          <a class="navbar-brand" href="#">HustleUp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#story">Story</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#coaching">Coaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#workshop">Workshop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn btn-primary schedule-call-btn">Schedule Call</a>
+        </div>
+      </nav>
+    </header>
+    
+    <section class="home-section d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="content-wrapper">  <div class="highlight-box rounded-pill">
+                <p class="highlight-text"><b>Awaken. Reclaim. Shine.</b></p>
+              </div>
+              <h1 class="custom-primary mt-3">Reclaim your passion, your possibility with transformational life coaching.</h1>
+              <br>
+              <button class="btn btn-primary schedule-call-btn">Schedule a Call</button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="image-box rounded overflow-hidden shadow-sm">
+              <img src="pexels-antoni-shkraba-production-8374298.jpg" alt="Image Description">
+              <div class="caption text-white p-3">
+                <p>This is the caption text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        
+    <style>
+      .h-100 {
+          height: 100vh;  /* Set row height to 100% viewport height */
+      }
+    </style>
+    
+    
+<Script>
+document.addEventListener("DOMContentLoaded", function() {
+  const imageBox = document.querySelector('.image-box');
+
+  function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) * 0.8 &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  function showImageBox() {
+      if (isInViewport(imageBox)) {
+          imageBox.style.opacity = "1";
+          imageBox.style.transform = "translateY(0)";
+          window.removeEventListener('scroll', showImageBox);
+      }
+  }
+
+  window.addEventListener('scroll', showImageBox);
+  showImageBox(); // Check on initial load
+});
+
+
+</Script>
+
+<section class="section-box">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h6>The mindful path to better living</h6>
+        <p>How to transform your personal lifestyle and habits?</p>
+      </div>
+      <div class="col-md-6">
+        <form class="subscription-form" method="post" name="New Form">
+          <div class="form-fields">
+            <div class="form-row">
+              <label for="form-field-name" class="elementor-screen-only">Your Name</label>
+              <input type="text" name="form_fields[name]" id="form-field-name" class="form-control elementor-size-sm elementor-field-textual" placeholder="Your Name">
+            </div>
+            <div class="form-row">
+              <label for="form-field-email" class="elementor-screen-only">Your Email</label>
+              <input type="email" name="form_fields[email]" id="form-field-email" class="form-control elementor-size-sm elementor-field-textual" placeholder="Your Email" required="required" aria-required="true">
+            </div>
+            <br>
+            <div class="form-row text-center">
+              <button type="submit" class="section-btn btn btn-primary">Subscribe now!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<br>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const sectionBox = document.querySelector('.section-box');
+
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function showSectionBox() {
+      if (isInViewport(sectionBox)) {
+        sectionBox.style.opacity = "1";
+        sectionBox.style.transform = "translateY(0)";
+        window.removeEventListener('scroll', showSectionBox);
+      }
+    }
+
+    window.addEventListener('scroll', showSectionBox);
+    showSectionBox(); 
+  });
+</script>
+
+
+<section class="services-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12">
+        <div class="service text-center">
+          <h2>You have the right to reclaim your dreams!</h2>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="service-image">
+          <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/09/zigzag.png" class="img-fluid mx-auto d-block" alt="Service Image">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="service-description text-center">
+          <p>Now, imagine this…Waking up every morning excited and motivated, ready to take on the world because you no longer let fear, or other’s people’s opinions, or any sort of discrimination stand in the way of your dreams. Sounds nice, but how do you get there? I can help you.</p>
+        </div>
+      </div>
+    </div>
+    <div class="service-wrapper">
+      <div class="service-item">
+        <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/service1.jpg" class="img-fluid" alt="Service 1 Image">
+        <h6>1-on-1 personal coaching</h6>
+        <p>Lorem ipsum dolor sit amet consectetur. Malesuada in dignissim vehicula sagittis lorem sit at ipsum nam nullam velit nibh.</p>
+        <a href="#">Discover more</a>
+      </div>
+      <div class="service-item">
+        <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/service2.jpg" class="img-fluid" alt="Service 2 Image">
+        <h6>Corporate team coaching</h6>
+        <p>Lorem ipsum dolor sit amet consectetur. Malesuada in dignissim vehicula sagittis lorem sit at ipsum nam nullam velit nibh.</p>
+        <a href="#">Discover more</a>
+      </div>
+      <div class="service-item">
+        <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/service3.jpg" class="img-fluid" alt="Service 3 Image">
+        <h6>Performance booster session</h6>
+        <p>Lorem ipsum dolor sit amet consectetur. Malesuada in dignissim vehicula sagittis lorem sit at ipsum nam nullam velit nibh.</p>
+        <a href="#">Discover more</a>
+      </div>
+      <div class="service-item">
+        <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/service4.jpg" class="img-fluid" alt="Service 4 Image">
+        <h6>Team work and team building</h6>
+        <p>Lorem ipsum dolor sit amet consectetur. Malesuada in dignissim vehicula sagittis lorem sit at ipsum nam nullam velit nibh.</p>
+        <a href="#">Discover more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const serviceElements = document.querySelectorAll('.service, .service-image, .service-description, .service-wrapper, .service-item');
+
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function showServiceElements() {
+      serviceElements.forEach(element => {
+        if (isInViewport(element)) {
+          element.classList.add('animated');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', showServiceElements);
+    showServiceElements();
+  });
+</script>
+
+
+<section class="steps-section"> 
+  <div class="container justify-content-center">
+    <h1 class="section-heading">Three simple steps to getting started</h1>
+    <div class="row">
+      <div class="col-md-4 step-item step-item-1">
+          <h2>01</h2>
+          <h6>Book your free discovery call</h6>
+      </div>
+      <div class="col-md-4 step-item step-item-2">
+          <h2>02</h2>
+          <h6>Embark on our coaching journey</h6>
+      </div>
+      <div class="col-md-4 step-item step-item-3">
+          <h2>03</h2>
+          <h6>Unleash your inner happiness impact</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  const stepItems = document.querySelectorAll('.step-item');
+
+  function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  function showStepItems() {
+      stepItems.forEach((item, index) => {
+          if (isInViewport(item)) {
+              setTimeout(() => {
+                  item.style.opacity = '1';
+                  item.style.transform = 'translateY(0)';
+              }, index * 300);
+          }
+      });
+  }
+
+  window.addEventListener('scroll', showStepItems);
+  showStepItems(); 
+});
+  </script>
+  
+
+  <section class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <div class="left-col">
+                <h1 class="left-head">Are you ready for your transformation?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur. Diam laoreet fringilla aliquam congue. Nam viverra nunc pharetra porttitor magna. Tincidunt aliquet gravida lorem id. Neque ac nulla tellus quisque nullam enim purus ipsum. Fermentum etiam risus eleifend nisi varius elit. Eros et neque neque diam risus tempor eleifend vehicula justo. Est tortor quis pellentesque ullamcorper nisl volutpat ut egestas. Integer pulvinar.</p>
+                <p>Amet viverra lectus faucibus mauris aenean imperdiet massa scelerisque magnis. Ipsum arcu eu at interdum nunc lacinia sed. Ornare nullam a mi mattis. Ultrices mollis sit lacus sit turpis ac ipsum venenatis tellus. Gravida volutpat id duis donec elit sit sit amet. Id pellentesque est elementum quis tellus cursus. Ut nec morbi eu dignissim. Morbi quis imperdiet sit nec. Ornare lectus sapien mollis eu. Nunc risus sed euismod ac nulla netus metus in. Nunc diam et at nulla duis.</p>  
+                <button class="btn btn-primary schedule-call-btn">Schedule Call</button>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center position-relative">
+            <div class="image-wrapper">
+                <img src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/transfer-892x1024.jpg" alt="Transformation Image">
+                <div class="info-box animate-on-scroll">
+                    <div class="counter">
+                        <div class="counter-number-wrapper">
+                            <span class="counter-number-prefix"></span>
+                            <span class="counter-number">12</span>
+                            <span class="counter-number-suffix"></span>
+                        </div>
+                        <div class="elementor-counter-title">Years of experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+
+      function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+      }
+
+      function animateElementsOnScroll() {
+          animateOnScrollElements.forEach(element => {
+              if (isInViewport(element)) {
+                  element.classList.add('animate');
+              }
+          });
+      }
+
+      window.addEventListener('scroll', animateElementsOnScroll);
+      animateElementsOnScroll(); 
+  });
+</script>
+<section class="author-section animate-on-scroll">
+  <div class="author-content">
+      <h2 class="author-title">#1 Bestselling Author</h2>
+      <p class="author-description">With Over 20 Million Books Sold In 96+ Nations</p>
+  </div>
+  <div class="author-images">
+      <div class="author-image author-image1">
+          <a href="#">
+              <img loading="lazy" decoding="async" width="496" height="662" src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author1.jpg" class="attachment-large size-large wp-image-325" alt="" srcset="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author1.jpg 496w, https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author1-225x300.jpg 225w">
+          </a>
+      </div>
+      <div class="author-image author-image2">
+          <a href="#">
+              <img loading="lazy" decoding="async" width="466" height="662" src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author2.jpg" class="attachment-large size-large wp-image-323" alt="" srcset="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author2.jpg 466w, https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author2-211x300.jpg 211w">
+          </a>
+      </div>
+      <div class="author-image author-image3">
+          <a href="#">
+              <img loading="lazy" decoding="async" width="468" height="662" src="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author3.jpg" class="attachment-large size-large wp-image-324" alt="" srcset="https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author3.jpg 468w, https://templatekits.wpmarvels.com/betterup/wp-content/uploads/sites/24/2023/08/author3-212x300.jpg 212w">
+          </a>
+      </div>
+  </div>
+</section>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
+
+  function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const elementTop = rect.top;
+      const elementBottom = rect.bottom;
+      const middleOfViewport = windowHeight / 2;
+      
+      return (elementTop < middleOfViewport && elementBottom > middleOfViewport);
+  }
+
+  function animateElementsOnScroll() {
+      animateOnScrollElements.forEach(element => {
+          if (isInViewport(element)) {
+              element.classList.add('animate');
+          }
+      });
+  }
+
+  window.addEventListener('scroll', animateElementsOnScroll);
+  animateElementsOnScroll(); 
+});
+
+</script>
+
+<!--help section-->
+<section class="help">
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <div class="help-content animate-on-scroll">
+                <div class="help-heading">
+                    <h2>Here’s how I can help...</h2>
+                </div>
+                <div class="help-text">
+                    <p>Lorem ipsum dolor sit amet consectetur. Mauris enim nulla tristique ultricies tellus maecenas amet lorem. Amet egestas vitae et ornare arcu blandit quis laoreet sapien. Sit id ullamcorper sed maecenas fames augue pretium. Condimentum habitant feugiat lectus cras hac et sed. Sit mi purus convallis fames neque iaculis molestie porta urna. Fringilla tempor aliquet ipsum quisque. Integer velit diam vestibulum nunc cursus hendrerit molestie a scelerisque.</p>
+                    <p>Amet sit risus tellus vitae egestas aliquam quisque. Quis commodo massa felis dignissim amet laoreet nibh gravida. Auctor euismod ornare elementum pellentesque et felis risus. Aliquet erat eleifend elit sed ornare egestas. Scelerisque purus arcu lacus commodo odio mi mus eros. Justo fames tristique ultricies facilisi vitae urna suscipit. In et sit gravida lacinia. Ornare ligula morbi varius velit morbi faucibus sapien lectus tortor. Ac amet vivamus gravida accumsan cras at.</p>
+                    <button class="btn btn-primary schedule-call-btn">Schedule Call</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="help-info-div animate-on-scroll animate">
+                <div class="help-info-section animate">
+                    <div class="help-info-content">
+                        <div class="help-info-item">
+                            <div class="help-info-number">
+                                <h6>01</h6>
+                            </div>
+                            <div class="help-info-details">
+                                <div>
+                                    <h6>Set bigger goals for yourself</h6>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Mauris enim nulla tristique ultricies tellus maecenas amet lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help-info-item">
+                            <div class="help-info-number">
+                                <h6>02</h6>
+                            </div>
+                            <div class="help-info-details">
+                                <div>
+                                    <h6>Alignment with your goals</h6>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Mauris enim nulla tristique ultricies tellus maecenas amet lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help-info-item">
+                            <div class="help-info-number">
+                                <h6>03</h6>
+                            </div>
+                            <div class="help-info-details">
+                                <div>
+                                    <h6>Create an action plan</h6>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Mauris enim nulla tristique ultricies tellus maecenas amet lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="help-info-item">
+                            <div class="help-info-number">
+                                <h6>04</h6>
+                            </div>
+                            <div class="help-info-details">
+                                <div>
+                                    <h6>Reprogram your mindset</h6>
+                                </div>
+                                <div>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Mauris enim nulla tristique ultricies tellus maecenas amet lorem.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+  
+      function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+      }
+  
+      function animateElements() {
+          elements.forEach(element => {
+              if (isInViewport(element) && !element.classList.contains('animate')) {
+                  element.classList.add('animate');
+              } else if (!isInViewport(element)) {
+                  element.classList.remove('animate');
+              }
+          });
+      }
+  
+      window.addEventListener('scroll', animateElements);
+      animateElements(); 
+  });
+  </script>
+  
+      
+
+<section class="footer-section">
+  <div class="footer-container">
+      <section class="footer-content">
+          <div class="footer-message">
+              <h6>Receive announcements, exclusive offers, and heart messages straight to your inbox.</h6>
+          </div>
+          <div class="footer-form">
+              <form method="post" name="New Form" class="footer-form-element">
+                  <input type="hidden" name="post_id" value="53">
+                  <input type="hidden" name="form_id" value="eec9ae4">
+                  <input type="hidden" name="referer_title" value="">
+                  <div class="footer-form-field">
+                      <input type="email" name="form_fields[email]" id="form-field-email" placeholder="Email" required="required">
+                  </div>
+                  <div class="footer-submit-button">
+                      <button type="submit">
+                          <span>Subscribe now!</span>
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </section>
+      
+  </div>
+</section>
+
+
+
+</body>
+</html>

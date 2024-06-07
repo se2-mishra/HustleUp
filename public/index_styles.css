@@ -1,0 +1,699 @@
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 0;
+  background-color: #ffffff;
+  overflow-x: hidden; 
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.content {
+  position: relative;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Create curved cuts */
+
+.navbar.bg-custom { /* Custom class for navbar background color */
+  background-color: #a09d9d;
+}
+
+.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000; 
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0; /* Position the underline at the bottom of the link */
+  left: 0;
+  background-color: transparent;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  background-color: #000; /* Underline color on hover */
+}
+
+/* Button styling */
+  .schedule-call-btn {
+    font-family: var(--e-global-typography-0254221-font-family), Sans-serif;
+    font-size: var(--e-global-typography-0254221-font-size), 16px;
+    font-weight: var(--e-global-typography-0254221-font-weight);
+    line-height: var(--e-global-typography-0254221-line-height);
+    letter-spacing: var(--e-global-typography-0254221-letter-spacing);
+    word-spacing: var(--e-global-typography-0254221-word-spacing);
+    fill: #fff;
+    color: #ffff;
+    background-color: #675bb2;
+    border-style: solid;
+    border-color:#675bb2;
+    border-width: 1px;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .schedule-call-btn:hover {
+    background-color: #4CAF50;
+    color: white; 
+  }
+  .home-section {
+    padding: 80px 0px;
+    min-height: 700px;
+  }
+  
+  .left-content,
+  .right-content {
+    flex: 1;
+  }
+
+  .custom-primary{
+    color: #675bb2;
+  }
+  
+  .left-content {
+    text-align: center;
+    color: #675bb2;
+    padding: 20px;
+    font-size: 50px;  /* You can adjust font size here for responsiveness */
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left; /* You can keep this custom left alignment */
+  }
+  
+  .highlight-box {
+    display: inline-block;
+    background-color: #675bb2;
+    /* No color definition needed, uses Bootstrap's 'bg-warning' class */
+    border-radius: 30px;
+  }
+  
+  .highlight-text {
+    /* Using Bootstrap's 'text-primary' class for blue color */
+    padding: 0px 8px;
+    color: #fff;
+    font-size: 18px;  /* You can adjust font size here if desired */
+  }
+  
+  
+  
+  .image-box {
+    width: 400px; 
+    height: 500px; 
+    background-color: #FFFFFF; 
+    border: 2px solid #FFD700; 
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 90px;
+    box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF; 
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-box {
+      width: 300px; 
+      height: 400px;
+    }
+  }
+  
+  .section-box {
+    margin: 0 auto; /* Center horizontally */
+    max-width: 600px; /* Limit width */
+    padding: 20px; /* Spacing within section */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Transitions for effects (optional) */
+  }
+  
+  .container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap child elements */
+    justify-content: space-between; /* Horizontal spacing */
+  }
+  
+  .column {
+    flex: 0 0 48%; /* Column sizing (optional for your layout) */
+  }
+  
+  h6 {
+    margin-bottom: 10px; /* Spacing below heading */
+    font-size: 24px; /* Font size */
+    color: #675bb2; /* Text color */
+  }
+  
+  .section-box p {
+    margin-bottom: 20px; /* Spacing below paragraph */
+    color: #5e597b; /* Text color */
+  }
+  
+  .subscription-form {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Wrap form elements */
+  }
+  
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.section-btn {
+  background-color: #ffe665;
+  color: #675BB2;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button.section-btn:hover {
+  background-color: #b09e44;
+}
+
+
+/*service section*/
+.service-wrapper {
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+  width: 100%;
+}
+
+.service-item {
+  flex: 1; 
+  margin-right: 20px;
+  border: 2px solid #b7b1c0; 
+  padding: 20px;
+  box-sizing: border-box; 
+  border-radius: 5px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:last-child {
+  margin-right: 0; 
+}
+.services-section .container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 1100px; 
+  margin: 0px auto; 
+}
+
+.services-section .service {
+  
+  margin-bottom: 20px; 
+}
+
+.services-section .service-image img {
+ 
+  max-width: 50%; 
+}
+
+.service-item img{
+  max-width: 100%;
+  height: auto;
+}
+.service-item h6 {
+  margin-top: 0; 
+}
+
+.service-item p {
+  margin-bottom: 10px; 
+}
+
+.service-item a {
+
+  text-decoration: none; 
+  color: #007bff;
+}
+  .service h2{
+    color: #675BB2;
+    font-size: 36px;
+    margin-bottom: 0px;
+  }
+  .service{
+    margin-bottom: 0px;
+  }
+  .services-section {
+    margin-bottom: 500px;
+  }
+
+  .service, .service-image, .service-description {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .service.animated, .service-image.animated, .service-description.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+/*steps section*/
+.steps-section .container {
+  position: relative;
+}
+
+.section-heading {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 42px;
+  color: #675bb2; 
+  text-align: center; 
+}
+
+.step-item h2 {
+  font-size: 40px;
+  color: #675bb2;
+  margin-bottom: 20px;
+}
+
+.step-item h6 {
+  font-size: 20px;
+  color: #333;
+}
+
+.step-item {
+  opacity: 0;
+  animation: slideFromLeft 1s forwards;
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.step-item-1 {
+  background-color: #E9E5FF;
+}
+
+.step-item-2 {
+  background-color: #fff3b5;
+}
+
+.step-item-3 {
+  background-color: #F0FFDD;
+}
+
+.steps-section{
+  margin-bottom: 50px;
+}
+/*after step section*/
+
+
+.left-col {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-head {
+  font-size: 24px;
+  color: #675bb2;
+}
+
+.left-col p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.image-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-box {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  width: 120px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #6e6d6cc0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+.counter .counter-number-wrapper {
+  display: flex;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.counter .counter-number-prefix,
+.counter .counter-number-suffix {
+  flex-grow: 1;
+  white-space: pre-wrap;
+}
+
+.counter .counter-number-prefix {
+  text-align: right;
+}
+
+.counter .counter-number-suffix {
+  text-align: left;
+}
+
+.counter-title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2.5;
+}
+
+/* CSS for fly-in animation from left */
+@keyframes flyInFromLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes flyInFromRight {
+  from {
+      opacity: 0;
+      transform: translateX(100%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.left-col, .info-box, .image-wrapper {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.left-col {
+  animation-name: flyInFromLeft;
+  animation-duration: 5s;
+}
+
+.info-box, .image-wrapper {
+  animation-name: flyInFromRight;
+  animation-duration: 5s;
+}
+
+/*Author Section*/
+
+.author-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.author-content {
+  margin-bottom: 40px;
+}
+
+.author-title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.author-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.author-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.author-image {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+.author-image img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+@keyframes flyInFromBelow {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate {
+  animation-fill-mode: both;
+}
+
+.author-section.animate {
+  animation-name: flyInFromBelow;
+  animation-duration: 1.5s; 
+}
+
+
+
+/*help section*/
+.help {
+  padding: 20px;
+}
+
+.help-content {
+  padding-right: 20px;
+  animation: slideFromLeft 1s ease forwards;
+}
+
+.help-info-div {
+  background-color: #fff6e8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjustments for Bootstrap integration */
+
+.help-heading {
+  color: #675BB2;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.help-info-number h6 {
+  display: inline-block;
+  padding: 7px;
+  background-color: #ffe665;
+  border-radius: 50%;
+}
+
+.help-info-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.help-info-details {
+  margin-left: 20px;
+}
+
+.help-info-section.animate {
+  animation: slideFromRight 1s ease forwards;
+}
+
+.help-info-item.animate {
+  animation: slideFromRight 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideFromLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+/*Footer*/
+.footer-section {
+  text-align: center;
+  background-color: #675BB2;
+}
+
+.footer-content {
+  display: inline-block;
+}
+
+.footer-message h6 {
+  color: #fff;
+}
+
+.footer-form {
+  margin-top: 20px;
+}
+
+.footer-form-element {
+  display: inline-block;
+}
+
+.footer-form-field {
+  margin-bottom: 10px;
+}
+
+.footer-form-field label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-form-field input[type="email"] {
+  
+  background-color: #ffffff;
+  border-color: #ffffff;
+  border-width: 1px 1px 1px 1px;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.footer-submit-button {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
+.footer-submit-button button {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+.footer-submit-button button:hover {
+  background-color: #0056b3;
+}
+
+/* fly in animation*/
+
+@keyframes flyIn {
+  from {
+      transform: translateY(150%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+.fly-in {
+  animation: flyIn 3s ease forwards;
+}

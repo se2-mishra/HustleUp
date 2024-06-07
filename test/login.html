@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="login_css.css">
+  <!--<script src="/registration-backend/login_script.js"></script>-->
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">HustleUp</div>
+        <ul class="nav-links">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#coaching">Coaching</a></li>
+          <li><a href="#workshop">Workshop</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="schedule-call-btn">Schedule Call</button>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="login-section">
+      <h2 class="member-heading">Already a member?</h2>
+      <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="POST" id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          <button type="submit">Login</button>
+        </form>
+        <p><a href="registration.html" class="registration-link">New user? Register here</a></p>
+      </div>
+    </div>
+    
+    <div class="info-section">
+      <h2 class="hustleup-text">HustleUp</h2>
+    </div>
+  </main>
+  
+  <footer class="footer-section">
+    <div class="footer-content">
+      <div class="footer-message">
+        <h6>&copy; 2024 HustleUp. All rights reserved.</h6>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
